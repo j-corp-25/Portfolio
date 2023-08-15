@@ -1,1 +1,3 @@
-#My Porfolio showing briefly what I have done over my time learning to code
+# Portfolio-Intro
+
+Small Portfolio project showing what Im working on
