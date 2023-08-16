@@ -6,167 +6,383 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jordy Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://kit.fontawesome.com/09693fed99.js" crossorigin="anonymous"></script>
+   <!--==================== Favicon ========================-->
+   <link rel="icon" href="assets/img/favicon.png" type="image/png">
+   <!--=================== Google Fonts ====================-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <!--=================== Remixicons ====================-->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+   <!--=================== Swiper ====================-->
+   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+   <!--=================== Main css ====================-->
+   <link rel="stylesheet" href="assets/css/main.css">
+</head>
 </head>
 
 <body>
 
+   <header id="header" class="header">
+       <nav class="nav container">
+           <a href="index.html" class="nav__brand">E</a>
+           <div id="nav-menu" class="nav__menu">
+               <ul class="nav__list">
+                   <li class="nav__item">
+                       <a href="#home" class="nav__link nav__link--active">Home</a>
+                   </li>
+                   <li class="nav__item">
+                       <a href="#service" class="nav__link">Services</a>
+                   </li>
+                   <li class="nav__item">
+                       <a href="#about" class="nav__link">About</a>
+                   </li>
+                   <li class="nav__item">
+                       <a href="#portfolio" class="nav__link">Portfolio</a>
+                   </li>
+                   <li class="nav__item">
+                       <a href="#contact" class="nav__link">Contact</a>
+                   </li>
+               </ul>
+               <span id="nav-close" class="nav__close">
+                   <i class="ri-close-line"></i>
+               </span>
+           </div>
+           <span id="nav-open" class="nav__open">
+               <i class="ri-menu-3-line"></i>
+           </span>
+       </nav>
+   </header>
 
-  <section id="about-me">
-    <nav>
-      <div class="personal_logo">Jordy Corporan</div>
-      <ul class="nav__link-list">
-        <li>
-          <a href="" class="nav__link-anchor link_hover-effect link-hover-effect-black">Languages</a>
-        </li>
-        <li>
-          <a href="" class="nav__link-anchor link_hover-effect link-hover-effect-black">Projects</a>
-        </li>
-        <li>
-          <a href="" class="nav__link-anchor link_hover-effect nav__link-anchor-primary">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="flex flex-1">
-      <div class="about_me_info row">
-        <div class="about_me_info-container">
-          <figure class="about-me_picture-mask">
-            <img class="about_me_image" src="./assets/DSC_0185.JPG" alt="" />
-          </figure>
-          <h1 class="about_me_info_title">Hey! Im Jordy Corporan</h1>
-          <p class="about-me_info-para">
-            Thank you for visiting my Portfolio. I recently started getting
-            into front end development with some backend work. Please
-            look at my projects below and the technologies that I use.
-          </p>
-          <div class="about-me_links">
-            <a href="https://www.linkedin.com/in/jcorporan/" class="about_me_link">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="" class="about_me_link">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="" class="about_me_link">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-            <a href="" class="about_me_link">
-              <i class="fa-solid fa-file-pdf"></i>
-            </a>
-          </div>
-        </div>
-        <figure class="about_me_img_container">
+   <main class="main">
 
-          <img class="about_me_image_main" src="./assets/undraw_Static_website_re_x70h.png" alt="" />
+       <section id="home" class="home">
+           <div class="home__wrapper d-grid container">
+               <div class="home__content">
+                   <h1 class="home__title">Hi, I'm <span>Jordy.</span><br />
+                       Software Developer</h1>
+                   <p class="home__text">
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, perferendis! Magni sed officiis suscipit consequatur, debitis sunt nam similique sit, a adipisci aut iure alias totam quas ex distinctio maiores.
+                   </p>
 
-        </figure>
-      </div>
-    </div>
-  </section>
+                   <div class="home__social">
+                       <ul class="social__list">
+                           <li class="social__item">
+                               <a href="#" class="social__link">
+                                   <i class="ri-facebook-fill"></i>
+                               </a>
+                           </li>
+                           <li class="social__item">
+                               <a href="#" class="social__link">
+                                   <i class="ri-instagram-fill"></i>
+                               </a>
+                           </li>
+                           <li class="social__item">
+                               <a href="#" class="social__link">
+                                   <i class="ri-behance-fill"></i>
+                               </a>
+                           </li>
+                           <li class="social__item">
+                               <a href="#" class="social__link">
+                                   <i class="ri-linkedin-fill"></i>
+                               </a>
+                           </li>
+                       </ul>
+                   </div>
+                   <a href="#" class="btn btn--primary">Hire Me</a>
+               </div>
+               <img class="home__img" src="assets/img/img.png" alt="Jordy Corporan">
+           </div>
+       </section>
+
+       <section id="service" class="section service">
+           <div class="section__header container">
+               <h2 class="section__title">Services</h2>
+           </div>
+           <div class="d-grid service__wrapper container">
+               <!--================ service 1 ==================-->
+               <div class="service__item">
+                   <div class="service__card">
+                       <div class="service__number">01</div>
+                       <h3 class="service__title">GlueTube</h3>
+                       <p class="service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente sed animi asperiores quos sit facere. Deleniti explicabo quo dolorem. Doloremque aperiam excepturi tenetur mollitia explicabo harum. Atque, deleniti debitis..</p>
+                       <a href="" class="service__link">Read More</a>
+                   </div>
+               </div>
+               <!--================ service 2 ==================-->
+               <div class="service__item">
+                   <div class="service__card">
+                       <div class="service__number">02</div>
+                       <h3 class="service__title">JMAX</h3>
+                       <p class="service__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi amet repellat sunt aliquid delectus id accusamus facere alias, quam modi optio maiores doloribus aut officia nesciunt numquam sit? Libero, laboriosam.</p>
+                       <a href="" class="service__link">Read More</a>
+                   </div>
+               </div>
+               <!--================ service 3 ==================-->
+               <div class="service__item">
+                   <div class="service__card">
+                       <div class="service__number">03</div>
+                       <h3 class="service__title">BloombergLite</h3>
+                       <p class="service__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio quas non omnis libero labore eligendi alias nemo! Facilis nam, rerum, quis non dolorem minus, voluptatibus accusamus voluptatem quibusdam amet vero?</p>
+                       <a href="" class="service__link">Read More</a>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+       <section id="about" class="about section">
+           <div class="about__wrapper d-grid container">
+               <div class="about__content">
+                   <h2 class="section__title">About Me</h2>
+                   <p class="about__text">
+                    Hello! I'm a seasoned professional who initially established roots in the investment management industry, specializing in operations and accounting. With an expansive background, I ensured the smooth functioning of financial processes and championed efficiency in my role. My aptitude for data analysis and modeling is underlined by my proficiency in Microsoft Excel. A passion for automation led me to delve deep into macros, optimizing performance wherever possible.
+
+                    Recognizing the immense potential of technology and software, I transitioned into software development. A soon-to-be graduate from App Academy, I've honed skills in CSS-HTML, Rails, Ruby, MongoDB, React, and JavaScript, marrying my finance background with coding to bring a unique perspective to problem-solving.
+                   </p>
+                   <a href="#" class="btn btn--primary">Download CV</a>
+               </div>
+               <img class="about__img" src="assets/img/about.jpg" alt="Jordy Corporan">
+               <div class="about__data">
+                   <div class="about__data-item">
+                       <div class="about__data-number">.5</div>
+                       <p class="about__data-text">Years of Experience</p>
+                   </div>
+                   <div class="about__data-item">
+                       <div class="about__data-number">3+</div>
+                       <p class="about__data-text">Projects Completed</p>
+                   </div>
+                   <!-- <div class="about__data-item">
+                       <div class="about__data-number">28+</div>
+                       <p class="about__data-text">Happy Clients</p>
+                   </div> -->
+               </div>
+           </div>
+       </section>
+
+       <section id="portfolio" class="portfolio section">
+           <div class="section__header container">
+               <h2 class="section__title">Portfolio</h2>
+           </div>
+           <div class="portfolio__wrapper d-grid container">
+               <!--======================== portfolio 1 ====================-->
+               <div class="portfolio__item">
+                   <img class="portfolio__img" src="assets/img/portfolio1.jpg">
+                   <div class="portfolio__info">
+                       <h3 class="portfolio__title">Football App</h3>
+                       <p class="portfolio__text">Consequat id ligula diam adipiscing amet.
+                           Vestibulum elit elit sapien molestie. </p>
+                   </div>
+                   <a href="#" class="portfolio__link">
+                       <i class="ri-arrow-right-up-line"></i>
+                   </a>
+               </div>
+               <!--======================== portfolio 2 ====================-->
+               <div class="portfolio__item">
+                   <img class="portfolio__img" src="assets/img/portfolio2.jpg">
+                   <div class="portfolio__info">
+                       <h3 class="portfolio__title">Crypto Website</h3>
+                       <p class="portfolio__text">Consequat id ligula diam adipiscing amet.
+                           Vestibulum elit elit sapien molestie. </p>
+                   </div>
+                   <a href="#" class="portfolio__link">
+                       <i class="ri-arrow-right-up-line"></i>
+                   </a>
+               </div>
+               <!--======================== portfolio 3 ====================-->
+               <div class="portfolio__item">
+                   <img class="portfolio__img" src="assets/img/portfolio3.jpg">
+                   <div class="portfolio__info">
+                       <h3 class="portfolio__title">Restaurant Website</h3>
+                       <p class="portfolio__text">Consequat id ligula diam adipiscing amet.
+                           Vestibulum elit elit sapien molestie. </p>
+                   </div>
+                   <a href="#" class="portfolio__link">
+                       <i class="ri-arrow-right-up-line"></i>
+                   </a>
+               </div>
+           </div>
+       </section>
+
+       <section class="testimonial section">
+           <div class="section__header container">
+               <h2 class="section__title">What My Clients Say</h2>
+           </div>
+           <div class="testimonial__wrapper container swiper">
+               <div class="swiper-wrapper">
+                   <!--======================= Testimonial 1 ===============-->
+                   <div class="testimonial__item swiper-slide">
+                       <p class="testimonial__text">
+                           Aliquet enim neque fringilla euismod vel tellus sed aliquam nulla.
+                           Vitae cursus quis mauris justo at quam cursus consectetur.
+                           Urna convallis nunc lorem nunc. Sed iaculis non sed nisi lobortis lacus aenean
+                           nulla cras.
+                       </p>
+                       <div class="testimonial__data">
+                           <img class="testimonial__img" src="assets/img/testimonial1.jpg" alt="Jeremiah Turay">
+                           <div class="testimonial__info">
+                               <h3 class="testimonial__name">Jeremiah Turay</h3>
+                               <p class="testimonial__description">Client</p>
+                           </div>
+                       </div>
+                       <span class="testimonial__icon">
+                           <i class="ri-double-quotes-r"></i>
+                       </span>
+                   </div>
+                   <!--======================= Testimonial 2 ===============-->
+                   <div class="testimonial__item swiper-slide">
+                       <p class="testimonial__text">
+                           Aliquet enim neque fringilla euismod vel tellus sed aliquam nulla.
+                           Vitae cursus quis mauris justo at quam cursus consectetur.
+                           Urna convallis nunc lorem nunc. Sed iaculis non sed nisi lobortis lacus aenean
+                           nulla cras.
+                       </p>
+                       <div class="testimonial__data">
+                           <img class="testimonial__img" src="assets/img/testimonial2.jpg" alt="">
+                           <div class="testimonial__info">
+                               <h3 class="testimonial__name">Elen Harris</h3>
+                               <p class="testimonial__description">Client</p>
+                           </div>
+                       </div>
+                       <span class="testimonial__icon">
+                           <i class="ri-double-quotes-r"></i>
+                       </span>
+                   </div>
+                   <!--======================= Testimonial 3 ===============-->
+                   <div class="testimonial__item swiper-slide">
+                       <p class="testimonial__text">
+                           Aliquet enim neque fringilla euismod vel tellus sed aliquam nulla.
+                           Vitae cursus quis mauris justo at quam cursus consectetur.
+                           Urna convallis nunc lorem nunc. Sed iaculis non sed nisi lobortis lacus aenean
+                           nulla cras.
+                       </p>
+                       <div class="testimonial__data">
+                           <img class="testimonial__img" src="assets/img/testimonial3.jpg" alt="David Brown">
+                           <div class="testimonial__info">
+                               <h3 class="testimonial__name">David Brown</h3>
+                               <p class="testimonial__description">Client</p>
+                           </div>
+                       </div>
+                       <span class="testimonial__icon">
+                           <i class="ri-double-quotes-r"></i>
+                       </span>
+                   </div>
+               </div>
+               <div class="swiper-pagination"></div>
+           </div>
+       </section>
+
+       <section id="contact" class="contact section">
+           <div class="contact__wrapper d-grid container">
+               <div class="contact__content">
+                   <h2 class="section__title">Get in Touch</h2>
+                   <p class="contact__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+                       distinctio blanditiis nemo quas quod, temporibus laboriosam sed
+                       quam ad sunt suscipit tempore commodi qui modi aliquam et sit ducimus.</p>
+
+                   <div class="contact__data">
+                       <div class="contact__item">
+                           <h3 class="contact__title">Email</h3>
+                           <p class="contact__info">corporan.jordy@gmail.com</p>
+                       </div>
+                       <div class="contact__item">
+                           <h3 class="contact__title">Call</h3>
+                           <p class="contact__info">(347) 485-2107</p>
+                       </div>
+                       <div class="contact__item">
+                           <h3 class="contact__title">WhatsApp</h3>
+                           <p class="contact__info">(347) 485-2107
+                           </p>
+                       </div>
+                   </div>
+               </div>
+               <form class="contact__form" action="">
+                   <div class="form__group">
+                       <label class="form__label">Full Name</label>
+                       <input class="form__input" type="text" required>
+                   </div>
+                   <div class="form__group">
+                       <label class="form__label">Email Address</label>
+                       <input class="form__input" type="email" required>
+                   </div>
+                   <div class="form__group">
+                       <label class="form__label">Write About Your Project</label>
+                       <textarea class="form__input form__textarea"></textarea>
+                   </div>
+                   <div>
+                       <button class="btn btn--primary" type="submit">
+                           Send Message
+                       </button>
+                   </div>
+               </form>
+           </div>
+       </section>
+   </main>
+
+   <footer class="footer">
+       <div class="footer__wrapper d-grid container">
+           <div class="footer__item">
+               <h3 class="footer__name">Jordy</h3>
+               <ul class="footer__social-list social__list">
+                   <li class="social__item">
+                       <a href="#" class="social__link">
+                           <i class="ri-facebook-fill"></i>
+                       </a>
+                   </li>
+                   <li class="social__item">
+                       <a href="#" class="social__link">
+                           <i class="ri-instagram-fill"></i>
+                       </a>
+                   </li>
+                   <li class="social__item">
+                       <a href="#" class="social__link">
+                           <i class="ri-behance-fill"></i>
+                       </a>
+                   </li>
+                   <li class="social__item">
+                       <a href="#" class="social__link">
+                           <i class="ri-linkedin-fill"></i>
+                       </a>
+                   </li>
+               </ul>
+           </div>
+           <div class="footer__item">
+               <h4 class="footer__title">Navigation</h4>
+               <ul class="footer__list">
+                   <a href="#home" class="footer__link">Home</a>
+                   <a href="#service" class="footer__link">Services</a>
+                   <a href="#portfolio" class="footer__link">Portfolio</a>
+                   <a href="#about" class="footer__link">About</a>
+               </ul>
+           </div>
+           <div class="footer__item">
+               <h4 class="footer__title">Contact</h4>
+               <ul class="footer__list">
+                   <a href="#home" class="footer__link">(347) 485-2107</a>
+                   <a href="#service" class="footer__link">corporan.jordy@gmail.com</a>
+               </ul>
+           </div>
+           <div class="footer__item">
+               <h4 class="footer__title">Address</h4>
+               <address class="footer__address">
+                   Address
+                   <br>
+                   New York, New York
+               </address>
+           </div>
+       </div>
+       <p class="footer__copyright container">
+           &copy; Copyright 2023 Designed by Jordy
+       </p>
+   </footer>
 
 
-  <section id="languages">
-    <div class="container">
-      <div class="row">
-        <h1 class="section_title">This is my technology stack</h1>
-        <div class="language_list">
-          <div class="language">
-            <figure class="language_img_wrapper">
-              <img src="./assets/badge-css-3-512.webp" alt="" class="language_image" />
-            </figure>
-            <span class="language_name">CSS</span>
-          </div>
 
-          <div class="language">
-            <figure class="language_img_wrapper">
-              <img src="./assets/HTML5_badge.png" alt="" class="language_image" />
-            </figure>
-            <span class="language_name">HTML</span>
-          </div>
-
-          <div class="language">
-            <figure class="language_img_wrapper">
-              <img src="./assets/React-icon.svg.png" alt="" class="language_image" />
-            </figure>
-            <span class="language_name">REACT</span>
-          </div>
-
-          <div class="language">
-            <figure class="language_img_wrapper">
-              <img src="./assets/Python_logo_icon.png" alt="" class="language_image" />
-            </figure>
-            <span class="language_name">PYTHON</span>
-          </div>
-
-
-          <div class="language">
-            <figure class="language_img_wrapper">
-              <img src="./assets/JavaScript_Logo.png" alt="" class="language_image" />
-            </figure>
-            <span class="language_name">JAVASCRIPT</span>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="container">
-      <div class="row">
-        <h1 class="section_title"> Below are my projects</h1>
-        <ul class="project_list">
-          <li class="project">
-            <div class="project_wrapper">
-
-              <img src="./assets/undraw_image_focus_re_qqxc.svg" class="project_img" alt="">
-              <div class="project_description">
-                <h3 class="project_description_title"> Project Title</h3>
-                <h4 class="project_description_sub_title"> HTML, CSS</h4>
-                <p class="project_description-para"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere est vel dignissimos expedita aliquid officia suscipit perspiciatis nisi! Quo voluptatem ea facere neque quisquam voluptate inventore tempora laudantium nihil sunt?</p>
-                <div class="project_description_links">
-                  <a href="https://github.com/j-corp-25" class="project_description_link">
-                    <i class="fa-brands fa-linkedin"></i>
-
-
-                  </a>
-                  <a href="https://github.com/j-corp-25" class="project_description_link">
-                    <i class="fa-brands fa-linkedin"></i>
-
-
-                  </a>
-                  <a href="https://github.com/j-corp-25" class="project_description_link">
-                    <i class="fa-brands fa-linkedin"></i>
-
-
-                  </a>
-                    
-                </div>
-              </div>
-            </div>
-
-          </li>
-        </ul>
-      </div>
-    </div>
-
-  </section>
-  <footer>
-    <div class="footer_row">
-      <a href="#" >
-        <img src="./assets/jc-logo-letter-initial-logo-designs-template-free-vector.jpg" class ="footer_logo"alt="">
-      </a>
-      <div class="footer_social_list">
-        <a href="" class="
-        footer_social_link
-        link_hover_effect
-        link_hover_effect_white
-        "></a>
-      </div>
-
-    </div>
-  </footer>
+   <!--=================== Swiper ====================-->
+   <script src="assets/js/swiper-bundle.min.js"></script>
+   <!--=================== ScrollReveal ====================-->
+   <script src="assets/js/scrollreveal.min.js"></script>
+   <!--=================== Main js ====================-->
+   <script src="assets/js/main.js"></script>
 </body>
 
 </html>
