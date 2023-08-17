@@ -1,14 +1,14 @@
 :root {
   /* Colors
   ======================================= */
-  --color-primary: #ff4d4d;
+  --color-primary: rgba(8, 94, 214, 1);
   --color-secondary: #131c28;
   --color-secondary-light: #222b37;
   --color-text: #6c6c6c;
   --color-title: #222b37;
   --color-gray: #f5f7ff;
   --color-white: #fff;
-  /* Typography 
+  /* Typography
   =======================================*/
   --font-body: "Poppins", sans-serif;
   --fw-regular: 400;
@@ -28,7 +28,7 @@
   --height-header: 10rem;
   --zindex-menu: 1000;
   --zindex-fixed: 1010;
-  /* Effects 
+  /* Effects
    ======================================= */
   --shadow: 30px 20px 80px 0px #e4edf5;
   --shadow-header: 0px 5px 15px 0px rgba(0, 0, 0, 0.06);
