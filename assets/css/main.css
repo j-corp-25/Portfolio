@@ -235,38 +235,25 @@ body {
 .nav__close:hover {
   color: var(--color-primary);
 }
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust the minmax values as needed */
+  gap: 20px; /* Adjust as needed */
+}
 
-@media screen and (max-width: 967px) {
-  .nav__menu {
-    background-color: var(--color-white);
-    box-shadow: var(--shadow-menu);
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    max-width: 28rem;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: var(--transition);
-    z-index: var(--zindex-fixed);
-  }
+.skill {
+  text-align: center;
+}
 
-  .nav__list {
-    display: grid;
-    row-gap: 5rem;
-  }
+.skill img {
+  max-width: 80px; /* Adjust as needed */
+  height: auto;
+  margin: 0 auto 10px;
+}
 
-  .nav__close {
-    position: absolute;
-    top: 3rem;
-    right: 3rem;
-  }
-
-  .nav__menu--open {
-    right: 0;
-  }
+.skill h3 {
+  font-size: 18px; /* Adjust as needed */
+  margin: 0;
 }
 
 /* home
@@ -641,9 +628,63 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--color-primary);
 }
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  gap: 20px; /* Adjust as needed */
+}
+
+.skill {
+  text-align: center;
+}
+
+.skill img {
+  max-width: 80px; /* Adjust as needed */
+  height: auto;
+  margin: 0 auto 10px;
+}
+
+.skill h3 {
+  font-size: 18px; /* Adjust as needed */
+  margin: 0;
+}
 
 /* Media Queries
  ======================================= */
+
+ @media screen and (max-width: 967px) {
+  .nav__menu {
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-menu);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    max-width: 28rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+    z-index: var(--zindex-fixed);
+  }
+
+  .nav__list {
+    display: grid;
+    row-gap: 5rem;
+  }
+
+  .nav__close {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+  }
+
+  .nav__menu--open {
+    right: 0;
+  }
+}
+
 
 @media screen and (min-width: 768px) {
   .section__header,
