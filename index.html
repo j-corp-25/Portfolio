@@ -1,292 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jordy Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/078b20f3a1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--==================== Favicon ========================-->
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+    <!--=================== Google Fonts ====================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--=================== Remixicons ====================-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--=================== Swiper ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!--=================== Main css ====================-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jordy Portfolio</title>
-  <script src="https://kit.fontawesome.com/078b20f3a1.js" crossorigin="anonymous"></script>
-  <!--==================== Favicon ========================-->
-  <link rel="icon" href="assets/img/favicon.png" type="image/png">
-  <!--=================== Google Fonts ====================-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-   <!--=================== Remixicons ====================-->
-   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-   <!--=================== Swiper ====================-->
-   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-   <!--=================== Main css ====================-->
-   <link rel="stylesheet" href="assets/css/main.css">
-   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
-
-</head>
-
-
-<body>
-
-   <header id="header" class="header">
-       <nav class="nav container">
-           <a href="index.html" class="nav__brand">J</a>
-           <div id="nav-menu" class="nav__menu">
-               <ul class="nav__list">
-                   <li class="nav__item">
-                       <a href="#home" class="nav__link nav__link--active">Home</a>
-                   </li>
-                   <li class="nav__item">
-                       <a href="#service" class="nav__link">Skills</a>
-                   </li>
-                   <li class="nav__item">
-                       <a href="#about" class="nav__link">About</a>
-                   </li>
-                   <li class="nav__item">
-                       <a href="#portfolio" class="nav__link">Portfolio</a>
-                   </li>
-                   <li class="nav__item">
-                       <a href="#contact" class="nav__link">Contact</a>
-                   </li>
-               </ul>
-               <span id="nav-close" class="nav__close">
-                   <i class="ri-close-line"></i>
-               </span>
-           </div>
-           <span id="nav-open" class="nav__open">
-               <i class="ri-menu-3-line"></i>
-           </span>
-       </nav>
-   </header>
-
-   <main class="main">
-
-       <section id="home" class="home">
-           <div class="home__wrapper d-grid container">
-               <div class="home__content">
-                   <h1 class="home__title">Hi, I'm <span>Jordy.</span><br />
-                       Software Developer</h1>
-                   <p class="home__text">
-                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, perferendis! Magni sed officiis suscipit consequatur, debitis sunt nam similique sit, a adipisci aut iure alias totam quas ex distinctio maiores.
-                   </p>
-
-                   <div class="home__social">
-                       <ul class="social__list">
-                           <li class="social__item">
-                               <a href="#" class="social__link">
-                                   <i class="ri-facebook-fill"></i>
-                               </a>
-                           </li>
-                           <li class="social__item">
-                               <a href="#" class="social__link">
-                                   <i class="ri-instagram-fill"></i>
-                               </a>
-                           </li>
-                           <li class="social__item">
-                               <a href="#" class="social__link">
-                                   <i class="ri-behance-fill"></i>
-                               </a>
-                           </li>
-                           <li class="social__item">
-                               <a href="#" class="social__link">
-                                   <i class="ri-linkedin-fill"></i>
-                               </a>
-                           </li>
-                        </ul>
-                    </div>
-                   <a href="#" class="btn btn--primary">Hire Me</a>
-               </div>
-               <img class="home__img" src="assets/img/PFP_1.jpeg" alt="Jordy Corporan">
-           </div>
-       </section>
-
-       <section id="service" class="section service">
-           <div class="section__header container">
-               <h2 class="section__title">Skills</h2>
-           </div>
-           <div class="service__wrapper container">
-
-               <div class="skills-grid" >
-                   <section class="skill" id="skills">
-                <img src="./assets/img/skills/js.png" class="icon solid alt major fa-flask">
-                <h3>Java Script</h3>
-              </section>
-              <section class="skill" id="skills">
-                <img src="./assets/img/skills/react.png" class="icon solid alt major fa-paper-plane"
-                <h3>React</h3>
-            </section>
-              <section class="skill" id="skills">
-                <img src="./assets/img/skills/redux.png" class="icon solid alt major fa-file">
-                <h3>Redux</h3>
-              </section>
-              <section class="skill" id="skills">
-                <img src="./assets/img/skills/ruby.png" class="icon solid alt major fa-lock"></img>
-                <h3>Ruby</h3>
-              </section>
-              <section class="skill" id="skills">
-                  <img src="./assets/img/skills/rails.png" class="icon solid alt major fa-lock">
-                  <h3>Rails</h3>
-                </section>
-                <section class="skill" id="skills">
-                <img src="./assets/img/skills/html.png" class="icon solid alt major fa-chart-area">
-                <h3>HTML</h3>
-            </section>
-              <section class="skill" id="skills">
-                <img src="./assets/img/skills/css.png" class="icon solid alt major fa-comment">
-                <h3>CSS</h3>
-              </section>
-              <section class="skill" id="skills">
-                  <img src="./assets/img/skills/git.png" class="icon solid alt major fa-lock">
-                <h3>Git</h3>
-              </section>
-              <section class="skill" id="skills">
-                  <img src="./assets/img/skills/node.png" class="icon solid alt major fa-lock">
-                <h3>Node JS</h3>
-              </section>
-              <section class="skill" id="skills">
-                  <img src="./assets/img/skills/python.png" class="icon solid alt major fa-lock">
-                  <h3>Python</h3>
-              </section>
-              <section class="skill" id="skills">
-                <img src="assets/img/skills/webpack.png" class="icon solid alt major fa-lock">
-                <h3>Webpack</h3>
-            </section>
-            <section class="skill" id="skills">
-                <img src="./assets/img/skills/sql.png" class="icon solid alt major fa-lock">
-                <h3>SQL</h3>
-              </section>
-              <section class="skill" id="skills">
-                <img src="./assets/img/skills/pngegg.png" class="icon solid alt major fa-lock">
-                <h3>PostgreSQL</h3>
-              </section>
-              <section class="skill" id="skills">
-                  <img src="./assets/img/skills/mongo2.png" class="icon solid alt major fa-lock">
-                  <h3>MongoDB</h3>
-                </section>
-              <section class="skill" id="skills">
-                <img src="./assets/img/skills/algorithm.png" class="icon solid alt major fa-lock">
-                <h3>Algorithms</h3>
-            </section>
-            <section class="skill" id="skills">
-                <img src="./assets/img/skills/data.png" class="icon solid alt major fa-lock">
-                <h3>Data Structures</h3>
-            </section>
-              <section class="skill" id="skills">
-                  <img src="./assets/img/skills/aws.png" class="icon solid alt major fa-lock">
-                  <h3>AWS</h3>
-                </section>
-              <section class="skill" id="skills">
-                  <img src="./assets/img/skills/REST.png" class="icon solid alt major fa-lock" alt="google_maps_api_skill">
-                  <h3>REST API</h3>
-                </section>
-                <!--================ service 1 ==================-->
-                <!-- <div class="service__item">
-                    <div class="service__card">
-                        <div class="service__number">01</div>
-                        <h3 class="service__title">GlueTube</h3>
-                       <p class="service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente sed animi asperiores quos sit facere. Deleniti explicabo quo dolorem. Doloremque aperiam excepturi tenetur mollitia explicabo harum. Atque, deleniti debitis..</p>
-                       <a href="" class="service__link">Read More</a>
-                   </div>
-                </div> -->
-               <!--================ service 2 ==================-->
-               <!-- <div class="service__item">
-                   <div class="service__card">
-                       <div class="service__number">02</div>
-                       <h3 class="service__title">JMAX</h3>
-                       <p class="service__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi amet repellat sunt aliquid delectus id accusamus facere alias, quam modi optio maiores doloribus aut officia nesciunt numquam sit? Libero, laboriosam.</p>
-                       <a href="" class="service__link">Read More</a>
-                   </div>
-                </div> -->
-                <!--================ service 3 ==================-->
-                <!-- <div class="service__item">
-                    <div class="service__card">
-                        <div class="service__number">03</div>
-                        <h3 class="service__title">BloombergLite</h3>
-                        <p class="service__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio quas non omnis libero labore eligendi alias nemo! Facilis nam, rerum, quis non dolorem minus, voluptatibus accusamus voluptatem quibusdam amet vero?</p>
-                        <a href="" class="service__link">Read More</a>
-                    </div>
-                </div> -->
-            </div>
-
+  <body>
+    <header id="header" class="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__brand">J</a>
+        <div id="nav-menu" class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link nav__link--active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skill" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+          <span id="nav-close" class="nav__close">
+            <i class="ri-close-line"></i>
+          </span>
         </div>
-       </section>
+        <span id="nav-open" class="nav__open">
+          <i class="ri-menu-3-line"></i>
+        </span>
+      </nav>
+    </header>
 
-       <section id="about" class="about section">
-           <div class="about__wrapper d-grid container">
-               <div class="about__content">
-                   <h2 class="section__title">About Me</h2>
-                   <p class="about__text">
-                    Hello! I'm a seasoned professional who initially established roots in the investment management industry, specializing in operations and accounting. With an expansive background, I ensured the smooth functioning of financial processes and championed efficiency in my role. My aptitude for data analysis and modeling is underlined by my proficiency in Microsoft Excel. A passion for automation led me to delve deep into macros, optimizing performance wherever possible.
+    <main class="main">
+      <section id="home" class="home">
+        <div class="home__wrapper d-grid container">
+          <div class="home__content">
+            <h1 class="home__title">
+              Hi, I'm <span>Jordy.</span><br />
+              Software Developer
+            </h1>
+            <p class="home__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+              perferendis! Magni sed officiis suscipit consequatur, debitis sunt
+              nam similique sit, a adipisci aut iure alias totam quas ex
+              distinctio maiores.
+            </p>
 
-                    Recognizing the immense potential of technology and software, I transitioned into software development. A soon-to-be graduate from App Academy, I've honed skills in CSS-HTML, Rails, Ruby, MongoDB, React, and JavaScript, marrying my finance background with coding to bring a unique perspective to problem-solving.
-                   </p>
-                   <a href="#" class="btn btn--primary">Download CV</a>
-               </div>
-               <img class="about__img" src="assets/img/PFP_2.jpeg" alt="Jordy Corporan">
-               <div class="about__data">
-                   <div class="about__data-item">
-                       <div class="about__data-number">.5</div>
-                       <p class="about__data-text">Years of Experience</p>
-                   </div>
-                   <div class="about__data-item">
-                       <div class="about__data-number">3+</div>
-                       <p class="about__data-text">Projects Completed</p>
-                   </div>
-                   <!-- <div class="about__data-item">
+            <div class="home__social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <i class="ri-facebook-fill"></i>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <i class="ri-instagram-fill"></i>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <i class="ri-behance-fill"></i>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <i class="ri-linkedin-fill"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn--primary">Hire Me</a>
+          </div>
+          <img
+            class="home__img"
+            src="assets/img/PFP_1.jpeg"
+            alt="Jordy Corporan"
+          />
+        </div>
+      </section>
+
+      <section id="skill" class="section skill">
+        <div class="section__header container">
+          <h2 class="section__title">Skills</h2>
+        </div>
+        <div class="skill__wrapper container">
+          <div class="skills-grid">
+            <section class="skill" id="skills">
+              <img
+                src="./assets/img/skills/js.png"
+                class="icon solid alt major fa-flask"
+              />
+              <h3>Java Script</h3>
+            </section>
+            <section class="skill" id="skills">
+              <img
+                src="./assets/img/skills/react.png"
+                class="icon solid alt major fa-paper-plane"
+              />
+              <h3>React</h3>
+            </section>
+            <section class="skill" id="skills">
+              <img
+                src="./assets/img/skills/redux.png"
+                class="icon solid alt major fa-file"
+              />
+              <h3>Redux</h3>
+            </section>
+            <section class="skill" id="skills">
+              <img
+                src="./assets/img/skills/ruby.png"
+                class="icon solid alt major fa-lock"
+              />
+              <h3>Ruby</h3>
+            </section>
+            <section class="skill" id="skills">
+              <img
+                src="./assets/img/skills/rails.png"
+                class="icon solid alt major fa-lock"
+              />
+              <h3>Rails</h3>
+            </section>
+            <section class="skill" id="skills">
+              <img
+                src="./assets/img/skills/html.png"
+                class="icon solid alt major fa-chart-area"
+              />
+              <h3>HTML</h3>
+            </section>
+            <section class="skill" id="skills">
+              <img
+                src="./assets/img/skills/css.png"
+                class="icon solid alt major fa-comment"
+              />
+              <h3>CSS</h3>
+            </section>
+            <section class="skill" id="skills">
+              <img
+                src="./assets/img/skills/git.png"
+                class="icon solid alt major fa-lock"
+              />
+              <h3>Git</h3>
+            </section>
+            <section class="skill" id="skills">
+              <img
+                src="./assets/img/skills/node.png"
+                class="icon solid alt major fa-lock"
+              />
+              <h3>Node JS</h3>
+            </section>
+            <section class="skill" id="skills">
+              <img
+                src="./assets/img/skills/python.png"
+                class="icon solid alt major fa-lock"
+              />
+              <h3>Python</h3>
+            </section>
+            <section class="skill" id="skills">
+              <img
+                src="assets/img/skills/webpack.png"
+                class="icon solid alt major fa-lock"
+              />
+              <h3>Webpack</h3>
+            </section>
+            <section class="skill" id="skills">
+              <img
+                src="./assets/img/skills/sql.png"
+                class="icon solid alt major fa-lock"
+              />
+              <h3>SQL</h3>
+            </section>
+            <section class="skill" id="skills">
+              <img
+                src="./assets/img/skills/pngegg.png"
+                class="icon solid alt major fa-lock"
+              />
+              <h3>PostgreSQL</h3>
+            </section>
+            <section class="skill" id="skills">
+              <img
+                src="./assets/img/skills/mongo2.png"
+                class="icon solid alt major fa-lock"
+              />
+              <h3>MongoDB</h3>
+            </section>
+            <section class="skill" id="skills">
+              <img
+                src="./assets/img/skills/algorithm.png"
+                class="icon solid alt major fa-lock"
+              />
+              <h3>Algorithms</h3>
+            </section>
+            <section class="skill" id="skills">
+              <img
+                src="./assets/img/skills/data.png"
+                class="icon solid alt major fa-lock"
+              />
+              <h3>Data Structures</h3>
+            </section>
+            <section class="skill" id="skills">
+              <img
+                src="./assets/img/skills/aws.png"
+                class="icon solid alt major fa-lock"
+              />
+              <h3>AWS</h3>
+            </section>
+            <section class="skill" id="skills">
+              <img
+                src="./assets/img/skills/REST.png"
+                class="icon solid alt major fa-lock"
+                alt="google_maps_api_skill"
+              />
+              <h3>REST API</h3>
+            </section>
+            <!--================ skill 1 ==================-->
+            <!-- <div class="skill__item">
+                        <div class="skill__card">
+                            <div class="skill__number">01</div>
+                            <h3 class="skill__title">GlueTube</h3>
+                        <p class="skill__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente sed animi asperiores quos sit facere. Deleniti explicabo quo dolorem. Doloremque aperiam excepturi tenetur mollitia explicabo harum. Atque, deleniti debitis..</p>
+                        <a href="" class="skill__link">Read More</a>
+                    </div>
+                    </div> -->
+            <!--================ skill 2 ==================-->
+            <!-- <div class="skill__item">
+                    <div class="skill__card">
+                        <div class="skill__number">02</div>
+                        <h3 class="skill__title">JMAX</h3>
+                        <p class="skill__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi amet repellat sunt aliquid delectus id accusamus facere alias, quam modi optio maiores doloribus aut officia nesciunt numquam sit? Libero, laboriosam.</p>
+                        <a href="" class="skill__link">Read More</a>
+                    </div>
+                    </div> -->
+            <!--================ skill 3 ==================-->
+            <!-- <div class="skill__item">
+                        <div class="skill__card">
+                            <div class="skill__number">03</div>
+                            <h3 class="skill__title">BloombergLite</h3>
+                            <p class="skill__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio quas non omnis libero labore eligendi alias nemo! Facilis nam, rerum, quis non dolorem minus, voluptatibus accusamus voluptatem quibusdam amet vero?</p>
+                            <a href="" class="skill__link">Read More</a>
+                        </div>
+                    </div> -->
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about section">
+        <div class="about__wrapper d-grid container">
+          <div class="about__content">
+            <h2 class="section__title">About Me</h2>
+            <p class="about__text">
+              Hello! I'm a seasoned professional who initially established roots
+              in the investment management industry, specializing in operations
+              and accounting. With an expansive background, I ensured the smooth
+              functioning of financial processes and championed efficiency in my
+              role. My aptitude for data analysis and modeling is underlined by
+              my proficiency in Microsoft Excel. A passion for automation led me
+              to delve deep into macros, optimizing performance wherever
+              possible. Recognizing the immense potential of technology and
+              software, I transitioned into software development. A soon-to-be
+              graduate from App Academy, I've honed skills in CSS-HTML, Rails,
+              Ruby, MongoDB, React, and JavaScript, marrying my finance
+              background with coding to bring a unique perspective to
+              problem-solving.
+            </p>
+            <a href="#" class="btn btn--primary">Download Resume</a>
+          </div>
+          <img
+            class="about__img"
+            src="assets/img/PFP_2.jpeg"
+            alt="Jordy Corporan"
+          />
+          <div class="about__data">
+            <div class="about__data-item">
+              <div class="about__data-number">.5</div>
+              <p class="about__data-text">Years of Experience</p>
+            </div>
+            <div class="about__data-item">
+              <div class="about__data-number">3+</div>
+              <p class="about__data-text">Projects Completed</p>
+            </div>
+            <!-- <div class="about__data-item">
                        <div class="about__data-number">28+</div>
                        <p class="about__data-text">Happy Clients</p>
                    </div> -->
-               </div>
-           </div>
-       </section>
+          </div>
+        </div>
+      </section>
 
-       <section id="portfolio" class="portfolio section">
-           <div class="section__header container">
-               <h2 class="section__title">Portfolio</h2>
-           </div>
-           <div class="portfolio__wrapper d-grid container">
-               <!--======================== portfolio 1 ====================-->
-               <div class="portfolio__item">
-                   <img class="portfolio__img" src="assets/img/portfolio1.jpg">
-                   <div class="portfolio__info">
-                       <h3 class="portfolio__title">JMAX</h3>
-                       <p class="portfolio__text"> A website where users can post problems and offer help to others, users can talk in real time with others.</p>
-                   </div>
-                   <a href="#" class="portfolio__link">
-                       <i class="ri-arrow-right-up-line"></i>
-                   </a>
-               </div>
-               <!--======================== portfolio 2 ====================-->
-               <div class="portfolio__item">
-                   <img class="portfolio__img" src="assets/img/portfolio2.jpg">
-                   <div class="portfolio__info">
-                       <h3 class="portfolio__title">GlueTube</h3>
-                       <p class="portfolio__text">A youtube clone where users can upload, watch videos and comment. </p>
-                   </div>
-                   <a href="#" class="portfolio__link">
-                       <i class="ri-arrow-right-up-line"></i>
-                   </a>
-               </div>
-               <!--======================== portfolio 3 ====================-->
-               <div class="portfolio__item">
-                   <img class="portfolio__img" src="assets/img/portfolio3.jpg">
-                   <div class="portfolio__info">
-                       <h3 class="portfolio__title">Bloomberg_Lite</h3>
-                       <p class="portfolio__text"> A stock visualization tool where users can put a stock and look at the prices over a period of time </p>
-                   </div>
-                   <a href="#" class="portfolio__link">
-                       <i class="ri-arrow-right-up-line"></i>
-                   </a>
-               </div>
-           </div>
-       </section>
-<!--
+      <section id="portfolio" class="portfolio section">
+        <div class="section__header container">
+          <h2 class="section__title">Portfolio</h2>
+        </div>
+        <div class="portfolio__wrapper d-grid container">
+          <!--======================== portfolio 1 ====================-->
+          <div class="portfolio__item">
+            <img class="portfolio__img" src="assets/img/portfolio1.jpg" />
+            <div class="portfolio__info">
+              <h3 class="portfolio__title">JMAX</h3>
+              <p class="portfolio__text">
+                A website where users can post problems and offer help to
+                others, users can talk in real time with others.
+              </p>
+            </div>
+            <a href="#" class="portfolio__link">
+              <i class="ri-arrow-right-up-line"></i>
+            </a>
+          </div>
+          <!--======================== portfolio 2 ====================-->
+          <div class="portfolio__item">
+            <img class="portfolio__img" src="assets/img/portfolio2.jpg" />
+            <div class="portfolio__info">
+              <h3 class="portfolio__title">GlueTube</h3>
+              <p class="portfolio__text">
+                A youtube clone where users can upload, watch videos and
+                comment.
+              </p>
+            </div>
+            <a href="#" class="portfolio__link">
+              <i class="ri-arrow-right-up-line"></i>
+            </a>
+          </div>
+          <!--======================== portfolio 3 ====================-->
+          <div class="portfolio__item">
+            <img class="portfolio__img" src="assets/img/portfolio3.jpg" />
+            <div class="portfolio__info">
+              <h3 class="portfolio__title">Bloomberg_Lite</h3>
+              <p class="portfolio__text">
+                A stock visualization tool where users can put a stock and look
+                at the prices over a period of time
+              </p>
+            </div>
+            <a href="#" class="portfolio__link">
+              <i class="ri-arrow-right-up-line"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--
        <section class="testimonial section">
            <div class="section__header container">
                <h2 class="section__title">Kind words from awesome people</h2>
            </div>
            <div class="testimonial__wrapper container swiper">
                <div class="swiper-wrapper"> -->
-                   <!--======================= Testimonial 1 ===============-->
-                   <!-- <div class="testimonial__item swiper-slide">
+      <!--======================= Testimonial 1 ===============-->
+      <!-- <div class="testimonial__item swiper-slide">
                        <p class="testimonial__text">
                            Aliquet enim neque fringilla euismod vel tellus sed aliquam nulla.
                            Vitae cursus quis mauris justo at quam cursus consectetur.
@@ -304,8 +393,8 @@
                            <i class="ri-double-quotes-r"></i>
                        </span>
                    </div> -->
-                   <!--======================= Testimonial 2 ===============-->
-                   <!-- <div class="testimonial__item swiper-slide">
+      <!--======================= Testimonial 2 ===============-->
+      <!-- <div class="testimonial__item swiper-slide">
                        <p class="testimonial__text">
                            Aliquet enim neque fringilla euismod vel tellus sed aliquam nulla.
                            Vitae cursus quis mauris justo at quam cursus consectetur.
@@ -323,8 +412,8 @@
                            <i class="ri-double-quotes-r"></i>
                        </span>
                    </div> -->
-                   <!--======================= Testimonial 3 ===============-->
-                   <!-- <div class="testimonial__item swiper-slide">
+      <!--======================= Testimonial 3 ===============-->
+      <!-- <div class="testimonial__item swiper-slide">
                        <p class="testimonial__text">
                            Aliquet enim neque fringilla euismod vel tellus sed aliquam nulla.
                            Vitae cursus quis mauris justo at quam cursus consectetur.
@@ -347,118 +436,117 @@
            </div>
        </section> -->
 
-       <section id="contact" class="contact section">
-           <div class="contact__wrapper d-grid container">
-               <div class="contact__content">
-                   <h2 class="section__title">Get in Touch</h2>
-                   <p class="contact__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-                       distinctio blanditiis nemo quas quod, temporibus laboriosam sed
-                       quam ad sunt suscipit tempore commodi qui modi aliquam et sit ducimus.</p>
+      <section id="contact" class="contact section">
+        <div class="contact__wrapper d-grid container">
+          <div class="contact__content">
+            <h2 class="section__title">Get in Touch</h2>
+            <p class="contact__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+              distinctio blanditiis nemo quas quod, temporibus laboriosam sed
+              quam ad sunt suscipit tempore commodi qui modi aliquam et sit
+              ducimus.
+            </p>
 
-                   <div class="contact__data">
-                       <div class="contact__item">
-                           <h3 class="contact__title">Email</h3>
-                           <p class="contact__info">corporan.jordy@gmail.com</p>
-                       </div>
-                       <div class="contact__item">
-                           <h3 class="contact__title">Call</h3>
-                           <p class="contact__info">(347) 485-2107</p>
-                       </div>
-                       <div class="contact__item">
-                           <h3 class="contact__title">WhatsApp</h3>
-                           <p class="contact__info">(347) 485-2107
-                           </p>
-                       </div>
-                   </div>
-               </div>
-               <form class="contact__form" action="">
-                   <div class="form__group">
-                       <label class="form__label">Full Name</label>
-                       <input class="form__input" type="text" required>
-                   </div>
-                   <div class="form__group">
-                       <label class="form__label">Email Address</label>
-                       <input class="form__input" type="email" required>
-                   </div>
-                   <div class="form__group">
-                       <label class="form__label">Write About Your Project</label>
-                       <textarea class="form__input form__textarea"></textarea>
-                   </div>
-                   <div>
-                       <button class="btn btn--primary" type="submit">
-                           Send Message
-                       </button>
-                   </div>
-               </form>
-           </div>
-       </section>
-   </main>
+            <div class="contact__data">
+              <div class="contact__item">
+                <h3 class="contact__title">Email</h3>
+                <p class="contact__info">corporan.jordy@gmail.com</p>
+              </div>
+              <div class="contact__item">
+                <h3 class="contact__title">Call</h3>
+                <p class="contact__info">(347) 485-2107</p>
+              </div>
+              <div class="contact__item">
+                <h3 class="contact__title">WhatsApp</h3>
+                <p class="contact__info">(347) 485-2107</p>
+              </div>
+            </div>
+          </div>
+          <form class="contact__form" action="">
+            <div class="form__group">
+              <label class="form__label">Full Name</label>
+              <input class="form__input" type="text" required />
+            </div>
+            <div class="form__group">
+              <label class="form__label">Email Address</label>
+              <input class="form__input" type="email" required />
+            </div>
+            <div class="form__group">
+              <label class="form__label">Write About Your Project</label>
+              <textarea class="form__input form__textarea"></textarea>
+            </div>
+            <div>
+              <button class="btn btn--primary" type="submit">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
 
-   <footer class="footer">
-       <div class="footer__wrapper d-grid container">
-           <div class="footer__item">
-               <h3 class="footer__name">Jordy</h3>
-               <ul class="footer__social-list social__list">
-                   <li class="social__item">
-                       <a href="#" class="social__link">
-                           <i class="ri-facebook-fill"></i>
-                       </a>
-                   </li>
-                   <li class="social__item">
-                       <a href="#" class="social__link">
-                           <i class="ri-instagram-fill"></i>
-                       </a>
-                   </li>
-                   <li class="social__item">
-                       <a href="#" class="social__link">
-                           <i class="ri-behance-fill"></i>
-                       </a>
-                   </li>
-                   <li class="social__item">
-                       <a href="#" class="social__link">
-                           <i class="ri-linkedin-fill"></i>
-                       </a>
-                   </li>
-               </ul>
-           </div>
-           <div class="footer__item">
-               <h4 class="footer__title">Navigation</h4>
-               <ul class="footer__list">
-                   <a href="#home" class="footer__link">Home</a>
-                   <a href="#service" class="footer__link">Services</a>
-                   <a href="#portfolio" class="footer__link">Portfolio</a>
-                   <a href="#about" class="footer__link">About</a>
-               </ul>
-           </div>
-           <div class="footer__item">
-               <h4 class="footer__title">Contact</h4>
-               <ul class="footer__list">
-                   <a href="#home" class="footer__link">(347) 485-2107</a>
-                   <a href="#service" class="footer__link">corporan.jordy@gmail.com</a>
-               </ul>
-           </div>
-           <div class="footer__item">
-               <h4 class="footer__title">Address</h4>
-               <address class="footer__address">
-                   Address
-                   <br>
-                   New York, New York
-               </address>
-           </div>
-       </div>
-       <p class="footer__copyright container">
-           &copy; Copyright 2023 Designed by Jordy
-       </p>
-   </footer>
+    <footer class="footer">
+      <div class="footer__wrapper d-grid container">
+        <div class="footer__item">
+          <h3 class="footer__name">Jordy</h3>
+          <ul class="footer__social-list social__list">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <i class="ri-facebook-fill"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <i class="ri-instagram-fill"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <i class="ri-behance-fill"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <i class="ri-linkedin-fill"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h4 class="footer__title">Navigation</h4>
+          <ul class="footer__list">
+            <a href="#home" class="footer__link">Home</a>
+            <a href="#skill" class="footer__link">Skills</a>
+            <a href="#portfolio" class="footer__link">Portfolio</a>
+            <a href="#about" class="footer__link">About</a>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h4 class="footer__title">Contact</h4>
+          <ul class="footer__list">
+            <a href="#home" class="footer__link">(347) 485-2107</a>
+            <a href="#skill" class="footer__link">corporan.jordy@gmail.com</a>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h4 class="footer__title">Address</h4>
+          <address class="footer__address">
+            Address
+            <br />
+            New York, New York
+          </address>
+        </div>
+      </div>
+      <p class="footer__copyright container">
+        &copy; Copyright 2023 Designed by Jordy
+      </p>
+    </footer>
 
-
-
-   <!--=================== Swiper ====================-->
-   <script src="assets/js/swiper-bundle.min.js"></script>
-   <!--=================== ScrollReveal ====================-->
-   <script src="assets/js/scrollreveal.min.js"></script>
-   <!--=================== Main js ====================-->
-   <script src="assets/js/main.js"></script>
-</body>
-
+    <!--=================== Swiper ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--=================== ScrollReveal ====================-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <!--=================== Main js ====================-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

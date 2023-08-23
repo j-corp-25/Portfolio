@@ -237,7 +237,10 @@ body {
 }
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust the minmax values as needed */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(150px, 1fr)
+  ); /* Adjust the minmax values as needed */
   gap: 20px; /* Adjust as needed */
 }
 
@@ -315,50 +318,50 @@ body {
   justify-self: center;
 }
 
-/* Services
+/* skills
    ======================================= */
-.service__item {
+.skill__item {
   justify-self: center;
   max-width: 38rem;
 }
 
-.service__card {
+.skill__card {
   background-color: var(--color-white);
   box-shadow: var(--shadow);
   padding: 5rem 3.5rem;
   transition: var(--transition);
 }
 
-.service__number {
+.skill__number {
   font-size: 4rem;
   font-weight: var(--fw-bold);
   color: var(--color-title);
   margin-bottom: 2rem;
 }
 
-.service__title {
+.skill__title {
   font-size: var(--fs-lg);
   margin-bottom: 2rem;
 }
 
-.service__text {
+.skill__text {
   margin-bottom: 3rem;
 }
 
-.service__link {
+.skill__link {
   color: var(--color-primary);
   font-weight: var(--fw-semibold);
 }
 
-.service__card:hover {
+.skill__card:hover {
   transform: translateY(-1rem);
   background-color: var(--color-primary);
 }
 
-.service__card:hover .service__number,
-.service__card:hover .service__title,
-.service__card:hover .service__text,
-.service__card:hover .service__link {
+.skill__card:hover .skill__number,
+.skill__card:hover .skill__title,
+.skill__card:hover .skill__text,
+.skill__card:hover .skill__link {
   color: var(--color-white);
 }
 
@@ -630,7 +633,10 @@ body {
 }
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Adjust the number of columns as needed */
   gap: 20px; /* Adjust as needed */
 }
 
@@ -652,7 +658,7 @@ body {
 /* Media Queries
  ======================================= */
 
- @media screen and (max-width: 967px) {
+@media screen and (max-width: 967px) {
   .nav__menu {
     background-color: var(--color-white);
     box-shadow: var(--shadow-menu);
@@ -685,7 +691,6 @@ body {
   }
 }
 
-
 @media screen and (min-width: 768px) {
   .section__header,
   .home__content,
@@ -695,7 +700,7 @@ body {
   }
 
   .home__wrapper,
-  .service__wrapper,
+  .skill__wrapper,
   .about__wrapper,
   .portfolio__wrapper,
   .contact__wrapper {
@@ -738,7 +743,7 @@ body {
     display: none;
   }
 
-  .service__wrapper,
+  .skill__wrapper,
   .portfolio__wrapper {
     grid-template-columns: repeat(3, 1fr);
   }

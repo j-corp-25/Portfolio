@@ -83,9 +83,9 @@ const sr = ScrollReveal({
 
 sr.reveal(".home__content, .about__content, .testimonial__wrapper");
 sr.reveal(".home__img, .about__img", { origin: "top" });
-sr.reveal(
-  ".service__item, .about__data-item, .portfolio__item, .footer__item",
-  { delay: 400, interval: 100 }
-);
+sr.reveal(".skill__item, .about__data-item, .portfolio__item, .footer__item", {
+  delay: 400,
+  interval: 100,
+});
 sr.reveal(".contact__content", { origin: "left" });
 sr.reveal(".contact__form", { origin: "right" });
