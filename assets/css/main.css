@@ -655,6 +655,9 @@ body {
   margin: 0;
 }
 
+.resume {
+  color: blue;
+}
 /* Media Queries
  ======================================= */
 
