@@ -1,3 +1,3 @@
 # Portfolio-Intro
 
-Small Portfolio project showing what Im working on
+Portfolio project showing my experience and projects
