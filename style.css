@@ -15,11 +15,10 @@ h1, .h1 {
 h2, .h2 {
   font-size: 45px;
 }
-
 img {
   max-width: 100%;
+  display: block;
 }
-
 blockquote {
   font-size: 28px;
 }
@@ -147,4 +146,8 @@ header.p-section {
   left: -0.05em;
   padding: 0 0.25em;
   bottom: 0.2em;
+}
+
+.portfolio__img {
+  min-height: 250px;
 }
