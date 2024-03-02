@@ -13,6 +13,7 @@ Interested in collaborating or want to learn more? Let's connect!
 
 - [LinkedIn](https://www.linkedin.com/in/jcorporan/)
 - [Instagram](https://www.instagram.com/jordydoesdev/)
+- [Twitter](https://twitter.com/Jordydoesdev)
 - Email - corporan.jordy@gmail.com
 
 Check out my full portfolio [here](https://jordydoesdev.co/).
